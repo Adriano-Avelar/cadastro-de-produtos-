@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miniprojeto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="dnc.webp" width="120">
+        <h1>Controle de Produto</h1>
+    </header>
+    <main>
+        <h2>Produtos</h2>
+        <span>Lista de Produtos</span>
+        <div class="card">
+            <div class="inputpd">
+                <label>Nome do Produto</label>
+                <input type="text" id="pdnome" placeholder="Iphone">
+            </div>
+            <div class="inputpd">
+                <label>Preço</label>
+                <input type="text" id="pdpreco" placeholder="R$ 00.00">
+            </div>
+            <button onclick="produto.Adicionar()"> Adicionar </button>
+            <button onclick="produto.Cancelar()">Cancelar</button>
+        </div>
+        <div class="conteudo">
+            <table border="1">
+                <thead>
+                    <th>ID</th>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Remover</th>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+    
+</body>
+<script src="script.js"></script>
+</html>
